@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    <EditText
+        android:id="@+id/search_et"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#eeeeee"
+        android:hint="검색어를 입력하세요."
+        android:padding="15dp" />
+
+    <Button
+        android:id="@+id/search_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#C62828"
+        android:text="검색하기"
+        android:padding="12dp"
+        android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/search2_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#24FCFF"
+        android:padding="10dp"
+        android:text="최신순"
+        android:layout_gravity="left"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/search3_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#24FCFF"
+        android:padding="10dp"
+        android:text="조회순"
+        android:layout_gravity="right"
+        android:textColor="#FFFFFF" />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:id="@+id/textView_list_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:text="글번호"
+            android:textSize="18dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/textView_list_pjName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="4"
+            android:padding="7dp"
+            android:text="제목"
+            android:textSize="18dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/textView_list_pjjName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="4"
+            android:padding="7dp"
+            android:text="내용"
+            android:textSize="18dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/textView_list_pjContent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="3"
+            android:padding="5dp"
+            android:text="등록일시"
+            android:textSize="18dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/textView_list_pjEffect"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="3"
+            android:padding="7dp"
+            android:text="조회수"
+            android:textSize="18dp"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        />
+
+    <Button
+        android:id="@+id/reg_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#C62828"
+        android:textColor="#FFFFFF"
+        android:text="새 글 작성하기"
+        />
+
+
+</LinearLayout>
+
+
